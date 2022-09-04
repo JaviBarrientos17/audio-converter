@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/script.js" defer></script>
+    <script src="js/script.js"></script>
     <title>Audio-Converter</title>
   </head>
   <body>
@@ -30,7 +30,7 @@
                 alt="Favicon"
                 width="20px"
                 height="20px"
-              />Audio-Converter</a
+              /> Audio-Converter</a
             >
           </div>
           <div>
@@ -40,20 +40,71 @@
           </div>
         </div>
       </div>
-      <div class="card" style="width: 30rem">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Select audio file for conversion (wav, mp3, ogg, aac, mp4, wma):
-          </p>
-          <div class="quick-drop-outer quick-left">
-            <input class="inputFile" type="file" id="inputFile" />
-          </div>
-          <div class="quick-drop-outer quick-left">
-            <div id="dropFile" class="dropFile">Drop file here</div>
-          </div>
+    </section>
+    <div class="card" style="width: 30rem">
+      <div class="card-body">
+        <h6 class="card-title">
+          1. Select audio file for conversion (wav, mp3, ogg, aac, mp4, wma):
+        </h6>
+        <div class="d-flex justify-content-center quick-drop-outer quick-left">
+          <input
+            class="form-control form-control-sm justify-content-center inputFile"
+            type="file"
+            id="inputFile"
+          />
         </div>
       </div>
-    </section>
+    </div>
+    <div class="card" style="width: 30rem">
+      <div class="card-body">
+        <h6 class="card-title">2. Select output audio format:</h6>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-default" name="formatBtn">
+            <input type="radio" name="format" value="mp3" checked />
+            MP3
+          </label>
+          <label class="btn btn-default" name="formatBtn">
+            <input type="radio" name="format" value="ogg" />
+            Ogg
+          </label>
+          <label class="btn btn-default" name="formatBtn">
+            <input type="radio" name="format" value="aac" />
+            AAC
+          </label>
+          <label class="btn btn-default" name="formatBtn">
+            <input type="radio" name="format" value="wma" />
+            WMA
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 30rem">
+      <div class="card-body">
+        <h6 class="card-title">3. Select bitrate:</h6>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-default" name="bitrateBtn">
+            <input type="radio" name="bitrate" value="96k" />
+            96k
+          </label>
+          <label class="btn btn-default" name="bitrateBtn">
+            <input type="radio" name="bitrate" value="128k" />
+            128k
+          </label>
+          <label class="btn btn-default" name="bitrateBtn">
+            <input type="radio" name="bitrate" value="192k" checked />
+            192k
+          </label>
+          <label class="btn btn-default" name="bitrateBtn">
+            <input type="radio" name="bitrate" value="320k" />
+            320k
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button type="button" id="convertBtn" class="btn btn-primary btn-rounded">
+        Convert
+      </button>
+    </div>
   </body>
 </html>
