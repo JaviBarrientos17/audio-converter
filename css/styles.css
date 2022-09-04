@@ -1,7 +1,23 @@
 body {
-    background-color: #7f7f7f;
+  background-color: #7f7f7f;
 }
 .navbarLinks {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+}
+.quick-drop-outer {
+  display: inline-block;
+  padding: 10px;
+  height: 50px;
+}
+.card {
+  margin: 10px auto;
+  float: none;
+  margin-bottom: 10px;
+}
+h5 {
+  text-align: center;
+}
+p {
+  text-align: justify;
 }
